@@ -10,6 +10,8 @@ import "../styles/auth.scss";
 export function NewRoom() {
   const { user } = useAuth();
 
+  console.log(user?.name)
+
   return (
     <div id="page-auth">
       <aside>
@@ -24,6 +26,7 @@ export function NewRoom() {
         <div className="main-content">
           <img src={logoImg} alt="Letmeask" />
           <h2>Crie uma nova sala</h2>
+          <h1>{user.name}</h1>
           <form>
             <input type="text" placeholder="Nome da sala" />
             <Button type="submit">Criar sala</Button>
