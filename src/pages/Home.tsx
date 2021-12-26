@@ -18,7 +18,7 @@ export function Home() {
       console.log(result)
     });
 
-    navigate('/room/new')
+    // navigate('/room/new')
   }
 
   return (
